@@ -87,6 +87,7 @@ public class MatrixSolver
 				throw new Exception("Матрицы разной размерности");				
 			}
 
+
 			int[,] assumedMatrix = new int
 				[matrix1.GetData().GetLength(0), matrix1.GetData().GetLength(1)];
 				
@@ -108,6 +109,9 @@ public class MatrixSolver
 		{
 			int[,] newMatrix = new int
 				[matrix1.GetData().GetLength(0), matrix1.GetData().GetLength(1)];
+
+
+
 			for(int indexJ = 0; indexJ < matrix1.GetData().GetLength(0); indexJ += 1)
 			{
 				for(int indexI = 0; indexI < matrix1.GetData().GetLength(1); indexI += 1)
