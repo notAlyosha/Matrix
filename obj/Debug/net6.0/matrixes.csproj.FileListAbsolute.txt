@@ -1,0 +1,15 @@
+C:\Users\Alex\Home\Code\proj\matrixes\bin\Debug\net6.0\matrixes.exe
+C:\Users\Alex\Home\Code\proj\matrixes\bin\Debug\net6.0\matrixes.deps.json
+C:\Users\Alex\Home\Code\proj\matrixes\bin\Debug\net6.0\matrixes.runtimeconfig.json
+C:\Users\Alex\Home\Code\proj\matrixes\bin\Debug\net6.0\matrixes.dll
+C:\Users\Alex\Home\Code\proj\matrixes\bin\Debug\net6.0\matrixes.pdb
+C:\Users\Alex\Home\Code\proj\matrixes\obj\Debug\net6.0\matrixes.csproj.AssemblyReference.cache
+C:\Users\Alex\Home\Code\proj\matrixes\obj\Debug\net6.0\matrixes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Home\Code\proj\matrixes\obj\Debug\net6.0\matrixes.AssemblyInfoInputs.cache
+C:\Users\Alex\Home\Code\proj\matrixes\obj\Debug\net6.0\matrixes.AssemblyInfo.cs
+C:\Users\Alex\Home\Code\proj\matrixes\obj\Debug\net6.0\matrixes.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Home\Code\proj\matrixes\obj\Debug\net6.0\matrixes.dll
+C:\Users\Alex\Home\Code\proj\matrixes\obj\Debug\net6.0\refint\matrixes.dll
+C:\Users\Alex\Home\Code\proj\matrixes\obj\Debug\net6.0\matrixes.pdb
+C:\Users\Alex\Home\Code\proj\matrixes\obj\Debug\net6.0\matrixes.genruntimeconfig.cache
+C:\Users\Alex\Home\Code\proj\matrixes\obj\Debug\net6.0\ref\matrixes.dll
