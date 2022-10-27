@@ -30,7 +30,15 @@ public class MatrixSolver
 		Console.WriteLine("Все шикарно, отвечаю");
 		return true;
 	}
+	public static bool IsVectorLine(Matrix matrix)
+	{
+		return matrix.GetData().GetLength(0) == 1;
+	}
 
+	public static bool IsVectorRow(Matrix matrix)
+	{
+		return matrix.GetData().GetLength(1) == 1;
+	}
 	//матрица единичная?
 	public static bool ImTheOne(Matrix matrix)
 	{
@@ -100,7 +108,7 @@ public class MatrixSolver
 				}
 			}
 						
-			return assumedMatrix;
+			return assumedMatrix;	
 		}
 
 
@@ -123,4 +131,66 @@ public class MatrixSolver
 			return newMatrix;
 		}
 
+
+		//без комментариев
+		public static int[,] Multiply(Matrix matrix1, Matrix matrix2)
+		{
+			if(matrix1.GetData().GetLength(1) != matrix2.GetData().GetLength(0))
+			{
+				throw new Exception("Матрицы нельзя перемножать");
+			}
+
+			Console.WriteLine(matrix1.GetData().GetLength(1) * matrix2.GetData().GetLength(0));
+			
+			int[,] summedMatrix = new int[2,2];
+			
+			for(int indexI = 0; indexI < matrix1.GetData().GetLength(0); indexI += 1)
+			{
+				for(int indexJ = 0; indexJ < matrix2.GetData().GetLength(1); indexJ += 1)
+				{
+					for(int counter = 0; counter < matrix2.GetData().GetLength(0); counter += 1)
+					{
+						summedMatrix[indexI, indexJ] += matrix1.GetDataElement(indexI, counter) * matrix2.GetDataElement(counter, indexJ);
+					}
+				}
+			}
+			
+			return summedMatrix;
+		}
+
+		//Я уже определившейся
+		public static int IKnowWhoAmI(Matrix matrix)
+		{
+			if(!MatrixSolver.IsSquare(matrix))
+			{
+				throw new Exception("Матрица не квадратная");
+			}
+
+			if(matrix.GetData().GetLength(0) == 2)
+			{
+				return matrix.GetDataElement(0, 0) * matrix.GetDataElement(1, 1) - matrix.GetDataElement(0, 1) * matrix.GetDataElement(1, 0);
+			}
+			//Че пацаны, треугольнички?)
+			if(matrix.GetData().GetLength(0) == 3)
+			{
+
+				return ((
+					matrix.GetDataElement(0, 0) * matrix.GetDataElement(1, 1) * matrix.GetDataElement(2, 2)) +
+					matrix.GetDataElement(0, 2) * matrix.GetDataElement(1, 0) * matrix.GetDataElement(2, 1) +
+					matrix.GetDataElement(0, 1) * matrix.GetDataElement(2, 0) * matrix.GetDataElement(1, 2) - 
+
+
+
+					
+					
+					matrix.GetDataElement(0, 2) * matrix.GetDataElement(1, 1) * matrix.GetDataElement(2, 0) -
+					matrix.GetDataElement(0, 1) * matrix.GetDataElement(1, 0) * matrix.GetDataElement(2, 2) -
+					matrix.GetDataElement(0, 0) * matrix.GetDataElement(1, 2) * matrix.GetDataElement(2, 1));
+			}
+
+			Console.WriteLine("Сам считай)");
+			return 0;
+		}
+
+		
 }

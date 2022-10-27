@@ -5,18 +5,16 @@ class Program
 	public static void Main()
 	{
 		int[,] arr1 = {
-			{0,  7, 9, 7},
-			{27, 0, 12, 6},
-			{3,  1, 0, 3},
+			{3, 3},
+			{2, 3},
+			{3, 3},
 		};
 
 		int[,] arr2 = {
-			{0,  7, 9, 7},
-			{27, 0, 12, 6},
-			{3,  1, 0, 3},
+			{7, -6},
 		};
 
-		Matrix matrix = new Matrix(MatrixSolver.SumMatrixNum(new Matrix(arr1), 5));
-		matrix.ShowYourSelf();
+		Console.WriteLine(MatrixSolver.IsVectorRow(new Matrix(arr1)));
+		Console.WriteLine(MatrixSolver.IsVectorLine(new Matrix(arr2)));
 	}
-}
+}	

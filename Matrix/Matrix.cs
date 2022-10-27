@@ -17,6 +17,11 @@ namespace Matrixes
 			return _data[indexJ, indexI];
 		}
 
+		public void SetDataElement(int indexJ, int indexI, int value)
+		{
+			_data[indexJ, indexI] = value;
+		}
+
 		public void ShowYourSelf()
 		{
 			Console.WriteLine("Я покажу тебе свою душу");
